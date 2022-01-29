@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Disaster Alert</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='assets/styles.css') }}">
+</head>
+
+<body>
+  <h1 class="main-title">Register here if you receive alerts</h1>
+  <h2>{{msg}}</h2>
+
+  <form action={{url_for('user')}} method="POST">
+    <div class="form-group ">
+      <label class="heading" for="c_email_id">E-mail id:</label><br>
+      <input class="value" type="E-mail" id="fname" name="c_email_id"><br>
+    </div>
+    <div class="form-group ">
+      <label class="heading" for="c_phone_n">Phone Number: </label><br>
+      <input class="value" type="Number" id="lname" name="c_phone_no"><br><br>
+    </div>
+    <div class="form-group ">
+      <label class="heading" for="c_city">City of Residence:</label><br>
+      <input class="value" type="text" id="lname" name="c_city"><br><br>
+    </div>
+    <div class="form-group ">
+      <label class="heading" for="c_size">Number of people who need shelter:</label><br>
+      <input class="value" type="Number" id="fname" name="c_size"><br>
+    </div>
+    <input class="submit1" type="submit" value="Submit">
+
+  </form>
+
+</body>
+</html>
