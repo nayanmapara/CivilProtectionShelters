@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Disaster Alert</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='assets/styles.css') }}">
+
+<body>
+
+  <h1 class="main-title">For Officials</h1>
+  <h2>{{msg}}</h2>
+
+  <form action={{url_for('officials')}} method="POST">
+    <div class="form-group ">
+      <label class="heading" for="o_email_id">E-mail id:</label><br>
+      <input class="value" type="E-mail" id="fname" name="o_email_id"><br>
+    </div>
+    <div class="form-group ">
+      <label class="heading" for="c_passwordo_password">Password: </label><br>
+      <input class="value" type="password" id="lname" name="o_password"><br><br>
+    </div>
+    <div class="form-group ">
+      <label class="heading" for="o_city">City of Residence:</label><br>
+      <input class="value" type="text" id="lname" name="o_city"><br><br>
+    </div>
+    <div class='forn-group'>
+      <label class="heading">Type of Disaster</label>
+      <select class="heading" name='o_type'>
+        <option value="plains">Earthquake</option>
+        <option value="high">Floods</option>
+        <option value="bunker">Tornado</option>
+        <option value="bunker">Thunderstorm</option>
+      </select><br><br>
+    </div>
+
+    <input class="submit1" type="submit" value="Send Alert">
+  </form>
+
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Yeseva+One&display=swap');
+
+#title h1{
+    color: #7e0606;
+    font-size: 3.5em;
+    font-family: 'Yeseva One', cursive;
+}
+
+button{
+    background-color: #F17F7F;
+    color: #F7F7F7;
+    border: none;
+    border-radius: 20px;
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 1000;
+    padding: 1% 5% 1% 5%;
+}
+
+button:hover{
+    background-color: #f52e2e;    
+}
+
+pre{
+    font-family: sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+    color: #05186e;
+}
+
+
+@media screen and (max-width: 768px) {
+    #title h1{
+        font-size: 2.5em;
+    }
+
+    .heading pre{
+        font-size: 1.5em;
+    }
+
+}
