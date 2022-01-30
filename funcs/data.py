@@ -1,16 +1,19 @@
-import smtplib
+from smtplib import SMTP
 from twilio.rest import Client
-import os
+from os import environ
+from requests import get
 
-email_sender_add= os.environ['email_sender_add']
-email_password= os.environ['email_password']
-account_sid = os.environ['account_sid']
-auth_token = os.environ['auth_token']
-message_sid = os.environ['message_sid']
+# Getting Environment Variables
+email_sender_add = environ['email_sender_add']
+email_password = environ['email_password']
+account_sid = environ['account_sid']
+auth_token = environ['auth_token']
+message_sid = environ['message_sid']
+map_api_key = environ["azure_maps_api_key"]
 
 def send_email(receiver_add,message):
     try:
-        smtp_server=smtplib.SMTP("smtp.gmail.com",587)
+        smtp_server = SMTP("smtp.gmail.com",587)
         smtp_server.ehlo() #setting the ESMTP protocol
         smtp_server.starttls() #setting up to TLS connection
         smtp_server.ehlo() #calling the ehlo() again as encryption happens on calling startttls()
@@ -43,6 +46,8 @@ def send_data(receiver_add,text,numbers):
     return output
 
 def loc_info(address):
-    # Code to be added here
-    url = ''
+    # Getting JSON data from API
+    json_data = get(f"https://atlas.microsoft.com/search/poi/json?api-version=1.0&query={address}&subscription-key={map_api_key}").json()
+    lat, lon = json_data["results"][0]["position"].values() # Getting Lat and Long from JSON
+    url = f"https://www.google.com/maps/place/{lat}+{lon}" # Making GoogleMaps URL of optained Lat and Long
     return url
