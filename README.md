@@ -8,9 +8,9 @@
 
 Disaster Management Authorities can notify people living in area of concern by sending alert from WebApp which will send SMS and emails to people regsitered to our site.
 
-As people get direct notifications from disaster management authorities, they will have sufficient time to get to the safe place to which the location would be provided in the SMS and Email they recive. These makes the evacuation efficient, faster and reliable, internt resulting into saving many lives. As Prevention is always better than cure.
+As people get direct notifications from disaster management authorities, they will have sufficient time to get to the safe place to which the location would be provided in the SMS and Email they receive. This makes the evacuation efficient, faster and more reliable, internet resulting in saving many lives. Prevention is always better than cure.
 
-On alert, we provide nearby shelter locations to people so that they are safe before and during the imapct.<br>
+On alert, we provide nearby shelter locations to people so that they are safe before and during the impact.<br>
 To visit the website click [here](https://www.civilprotectionshelters.co).
 ## Installation
 This can be installed locally with 1 easy step.
@@ -20,7 +20,7 @@ python -m pip install -r requirements.txt
 ```
 
 ## Built With
-#### Following Programming, Databse, Scripting, Styling and Marup Languages are used:
+#### Following Programming, Database, Scripting, Styling and Markup Languages are used:
 - Python
 - MySQL
 - Javascript
@@ -43,7 +43,7 @@ Creators of this Project:
 4. [Dhanesh N](https://github.com/Pagasis)
 5. [Anurag Singh](https://github.com/Drakon675)
 
-This Project is under standby if you think this idea can help and would like to bring this project to life, Contact me personally [here](mailto:contact@nayanm.me)
+This Project is under standby if you think this idea can help and would like to bring this project to life, Contact me personally [here](mailto:contact@nayanm.me).
 
 ## License
 This project is licensed under [MIT](https://choosealicense.com/licenses/mit/).
