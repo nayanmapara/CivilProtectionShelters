@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Yeseva+One&display=swap');
+
+*{
+	background-color: #F7F7F7;
+}
+
 h1{
 	font-size: 40px;
 	text-align: center;
@@ -6,30 +12,44 @@ h1{
 	font-weight: bold ;
 	font-family: 'Oxygen', sans-serif;
 }
+
+.main-title{
+	font-family: 'Yeseva One';
+}
+
+.form-group{
+	margin-bottom: 2vh;
+}
+
 .heading{
 	font-size: 20px;
-	margin-left: 60px;
-	padding-top: 5px;
+	font-family: Roboto, sans-serif;
+	font-weight: bold;
+	color: #05186e;
+	/* padding-top: 5px; */
 }
 
 .value{
 	font-size: 20px;
-	margin-left: 60px;
-	position: relative;
 }
 
 .circle{
 	padding-right: 20px;
 }
+
 .circle1{
 	padding-left: 20px;
 }
 
 .submit1{
-	margin-left: 60px;
-	font-size: 20px;
-	background-color: red;
-	color: white;
+	background-color: #F17F7F;
+    color: #F7F7F7;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 1000;
+    padding: 1% 2% 1% 2%;
 }
 
 .submit1:hover{
@@ -40,4 +60,18 @@ h1{
 
 .small_heading{
 	margin-left: 15px;
+}
+
+.form-controller{
+	margin-left: 5vw;
+}
+
+@media screen and (max-width: 800px) {
+	.form-controller{
+		margin-left: 10vw;
+	}
+
+	textarea{
+		width: 80vw;
+	}
 }
