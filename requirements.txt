@@ -1,0 +1,5 @@
+requests
+smtplib
+twilio
+flask
+flask-mysql
